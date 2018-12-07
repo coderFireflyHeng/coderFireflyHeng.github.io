@@ -1,498 +1,144 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/friend.css"/>
+    <title>送给老婆大人</title>
+    <style>
+        .snow-container{
+            position: fixed;
+            top:0;
+            left: 0;
+            bottom:0;
+            right:0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
 
+            background-position: center center;
 
-    <head>
-        <meta charset="utf-8">
-        <title>学研汇欢迎您</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+            background-image: url(images/ChMkJ1fJRYGIDrznAAuqMXcMjt0AAU8WQJsTaQAC6pJ926.png);
+            z-index: 100001;
 
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/templatemo_style.css">
-        <link rel="stylesheet" href="css/templatemo_misc.css">
-        <link rel="stylesheet" href="css/flexslider.css">
-        <link rel="stylesheet" href="css/testimonails-slider.css">
-        <style>
-            .blog-post .blog-thumb img{
-                width:360px;
-                height:240px;
+            background-size: 100% 100%;
+        }
+        .play-icon{
+            position: absolute;
+
+            background: url("images/icon-play.png") no-repeat 50% 50%;
+            background-size: cover;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            top:50%;
+            left: 50%;
+            margin-top: -30px;
+            margin-left: -30px;
+            -webkit-animation-timing-function:ease-in-out;
+            -webkit-animation-name:breathe;
+            -webkit-animation-duration:2700ms;
+            -webkit-animation-iteration-count:infinite;
+            -webkit-animation-direction:alternate;
+        }
+        @-webkit-keyframes breathe {
+            0% {
+                opacity:.3;
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                top:50%;
+                left: 50%;
+                margin-top: -30px;
+                margin-left: -30px;
             }
-        </style>
-        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="#/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
-
-            <header>
-                <!--<div id="top-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="home-account">
-                                    <a href="#">Home</a>
-                                    <a href="#">My account</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="cart-info">
-                                    <i class="fa fa-shopping-cart"></i>
-                                    (<a href="#">5 items</a>) in your cart (<a href="#">$45.80</a>)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                <div id="main-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-1">
-                                <div class="logo">
-                                    <a href="#"><img src="images/logo.png" title="Grill Template" alt="Grill Website Template" ></a>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="main-menu">
-                                    <ul>
-                                        <li><a href="index.html">首页</a></li>
-                                        <li><a href="scientificResearch.html">科研绘图</a></li>
-                                        <li><a href="products.html">样品测试</a></li>
-                                        <li><a href="dataPruduct.html">数据分析</a></li>
-                                        <li><a href="computed.html">计算模拟</a></li>
-                                        <li><a href="contact-us.html">联系我们</a></li>
-                                        <!--<li><a href="about-us.html">关于我们</a></li>-->
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="search-box">  
-                                    <form name="search_form" method="get" class="search_form">
-                                        <input id="search" type="text" />
-                                        <input type="submit" id="search-button" />
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            
-
-            <div id="slider">
-                <div class="flexslider">
-                  <ul class="slides">
-                    <li>
-                        <div class="slider-caption">
-                            <h1>欢迎来到学研汇！</h1>
-                            <p>学研汇测试分析平台--
-                                <br><br>您的得力科研助手，为您提供完美的科研解决方案！
-                            </p>
-                            <a href="#">了解更多</a>
-                        </div>
-                      <img src="images/1.jpg" alt="" />
-                    </li>
-                    <li>
-                        <div class="slider-caption">
-                            <h1>欢迎来到学研汇！</h1>
-                            <p>学研汇测试分析平台--
-                                <br><br>您的得力科研助手，为您提供完美的科研解决方案！
-                            </p>
-                            <a href="#">了解更多</a>
-                        </div>
-                      <img src="images/2.jpg" alt="" />
-                    </li>
-                     <li>
-                          <div class="slider-caption">
-                              <h1>欢迎来到学研汇！</h1>
-                              <p>学研汇测试分析平台--
-                                  <br><br>您的得力科研助手，为您提供完美的科研解决方案！
-                              </p>
-                              <a href="#">了解更多</a>
-                          </div>
-                          <img src="images/5.jpg" alt="" />
-                      </li>
-                    <li>
-                        <div class="slider-caption">
-                            <h1>欢迎来到学研汇！</h1>
-                            <p>学研汇测试分析平台--
-                                <br><br>您的得力科研助手，为您提供完美的科研解决方案！
-                            </p>
-                            <a href="#">了解更多</a>
-                        </div>
-                      <img src="images/3.jpg" alt="" />
-                    </li>
-                    <li>
-                        <div class="slider-caption">
-                            <h1>欢迎来到学研汇！</h1>
-                            <p>学研汇测试分析平台--
-                                <br><br>您的得力科研助手，为您提供完美的科研解决方案！
-                            </p>
-                            <a href="#">了解更多</a>
-                        </div>
-                        <img src="images/4.jpg" alt="" />
-                    </li>
-
-                  </ul>
-                </div>
+            100% {
+                opacity:1;
+                height: 120px;
+                width: 120px;
+                border-radius: 50%;
+                top:50%;
+                left: 50%;
+                margin-top: -60px;
+                margin-left: -60px;
+            }
+        }
+    </style>
+</head>
+<body>
+<section id="container" class="swiper-container">
+    <div class="snow-container">
+        <section class="play-icon"></section>
+    </div>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="images/loveHeart.jpeg" alt="year" class="bg">
+            <div class="title">
+                <span class="animate-active"  set-animate="pulse 1s ease 300ms 1">我</span>
+                <span  class="animate-active" set-animate="pulse 1s ease 1300ms 1">愿</span>
+                <span  class="animate-active" set-animate="pulse 1s ease 2300ms 1">意</span>
             </div>
-            <div class="copyrights">Collect from <a href="#"  title="网站模板">网站模板</a></div>
-
-
-            <div id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="heading-section">
-                                <h2>我们的优势</h2>
-                                <img src="images/underHeading.png" alt="" >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <div class="icon">
-                                    <i class="fa fa-pencil"></i>
-                                </div>
-                                <h4>优势一</h4>
-                                <p>专业，团队主干成员来自北京大学、中科院、香港理工大学等知名科研机构的博士团队，具有扎实的科研基础。</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <div class="icon">
-                                    <i class="fa fa-bullhorn"></i>
-                                </div>
-                                <h4>优势二</h4>
-                                <p>高效，流程化规范操作，保质保量对接客户业务。</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <div class="icon">
-                                    <i class="fa fa-bell"></i>
-                                </div>
-                                <h4>优势三</h4>
-                                <p>多渠道沟通，微信、QQ、邮件、电话随时随地可以进行交流。</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <div class="icon">
-                                    <i class="fa fa-heart"></i>
-                                </div>
-                                <h4>优势四</h4>
-                                <p>完善的售后，服务直到满意为止。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div id="latest-blog">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="heading-section">
-                                <h2>最新项目合作</h2>
-                                <img src="images/underHeading.png" alt="" >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="images/121231212.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="#">流程图绘制</a></h4>
-                                        <span>2018.02.15</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>流程图绘制</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="images/ACTEMmapping.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="#">ACTEM-mapping</a></h4>
-                                        <span>2018.05.15</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>ACTEM-mapping</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="images/coverDrawing.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="#">封面绘图</a></h4>
-                                        <span>2018.05.25</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>封面绘图</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="images/ewewewew.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="#">元素图绘制</a></h4>
-                                        <span>2018.06.25</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>元素图绘制</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="images/2imageSimulation.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="#">simulation</a></h4>
-                                        <span>2018.05.15</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>simulation</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="images/3TEM.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="#">TEM测试</a></h4>
-                                        <span>2018.04.29</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>TEM测试</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="images/4XRD.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="#">XRD精修</a></h4>
-                                        <span>2018.04.22</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>XRD精修</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="images/53Ddata.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="#">三维数据制图</a></h4>
-                                        <span>2018.01.21</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>三维数据制图</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="blog-post">
-                                <div class="blog-thumb">
-                                    <img src="images/6anycData.jpg" alt="" />
-                                </div>
-                                <div class="blog-content">
-                                    <div class="content-show">
-                                        <h4><a href="#">同步辐射数据分析</a></h4>
-                                        <span>2018.02.15</span>
-                                    </div>
-                                    <div class="content-hide">
-                                        <p>同步辐射数据分析</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="testimonails">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="heading-section">
-                                <h2>用户反馈</h2>
-                                <img src="images/underHeading.png" alt="" >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="testimonails-slider">
-                              <ul class="slides">
-                                <li>
-                                    <div class="testimonails-content">
-                                        <p>测试负责人李老师很负责，很专业，测试的细节解释的都比较清楚，测试效率挺高效的，测试结果反馈也比较及时，价格适中，强烈推荐!</p>
-                                        <h6>反馈客户 - <a href="#">南开大学  老张</a></h6>
-                                    </div>
-                                </li>
-                                  <li>
-                                      <div class="testimonails-content">
-                                          <p>绘图工程师小杰，人非常nice，因为在美国，有时差，但是小杰老师仍然熬夜与我一块奋战，直接搞到晚上3点，设计效果非常好，点一个大大的赞，五星好评！</p>
-                                          <h6>反馈客户 - <a href="#">Rice University    Peter</a></h6>
-                                      </div>
-                                  </li>
-                                  <li>
-                                      <div class="testimonails-content">
-                                          <p>做的数据是XRD精修以及同步辐射数据分析，两个字，专业！</p>
-                                          <h6>反馈客户 - <a href="#">华中科技大学 王老师</a></h6>
-                                      </div>
-                                  </li>
-                              </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-			<footer>
-                <div class="container">
-                    <div class="top-footer">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="subscribe-form">
-                                    <span>发消息给我们</span>
-                                    <form method="get" class="subscribeForm">
-                                        <input id="subscribe" type="text" />
-                                        <input type="submit" id="submitButton" />
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="social-bottom">
-                                    <span>关注我们:</span>
-                                    <ul>
-                                        <li><img src="images/ewm.png" alt=""></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-footer">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="about">
-                                    <h4 class="footer-title">公司简介</h4>
-                                    <p>公司创始团队是基于国际名校的博士成员建立起来的专业化数据分析团队，拥有深厚的学科背景与国际化视野，公司着眼于科学技术研究与发展的前沿问题，基于互联网+共享理念，致力于建设一个专业、开放、高效的高水平分析测试共享平台。
-                                        <br></p>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="shop-list">
-                                    <h4 class="footer-title">友情链接</h4>
-                                    <ul>
-                                        <li><a href="http://www.tsinghua.edu.cn/publish/anac/2179/index.html"><i class="fa fa-angle-right"></i>清华大学分析测试中心</a></li>
-                                        <li><a href="http://aic.pku.edu.cn/?page=index"><i class="fa fa-angle-right"></i>北京大学分析测试中心</a></li>
-                                        <li><a href="http://www.4243.net/"><i class="fa fa-angle-right"></i>文献免费下载</a></li>
-                                        <li><a href="https://xueshu.glgoo.net/"><i class="fa fa-angle-right"></i>glgoo学术搜索</a></li>
-                                        <!--<li><a href="#"><i class="fa fa-angle-right"></i>友情链接五标题</a></li>-->
-                                        <!--<li><a href="#"><i class="fa fa-angle-right"></i>友情链接六标题</a></li>-->
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="recent-posts">
-                                    <h4 class="footer-title">近期项目</h4>
-                                    <div class="recent-post">
-                                        <div class="recent-post-thumb">
-                                            <img src="images/graphicDesign.jpg" alt="">
-                                        </div>
-                                        <div class="recent-post-info">
-                                            <h6><a href="#">绘图设计</a></h6>
-                                            <span>2018/08/12</span>
-                                        </div>
-                                    </div>
-                                    <div class="recent-post">
-                                        <div class="recent-post-thumb">
-                                            <img src="images/analysisTest.jpg" alt="">
-                                        </div>
-                                        <div class="recent-post-info">
-                                            <h6><a href="#">数据分析及样品测试</a></h6>
-                                            <span>2018/06/12</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="more-info">
-                                    <h4 class="footer-title">关于我们</h4>
-                                    <p>团队主创人员主要来自中科院、北京大学、香港理工大学、厦门大学、北京科技大学等国内外知名研究单位，本着集思广益、博采众长的理念，让知识创造价值，让科研更加高效！</p>
-                                    <ul>
-                                        <li><i class="fa fa-phone"></i>+86 132 9075 5089</li>
-
-                                        <li><i class="fa fa-envelope"></i><a href="#">xueyanceshi@163.com</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bottom-footer">
-                        <p>Copyright © 2018 <a href="#">河南克莱克信息科技有限公司</a> Collect from <a href="#" title="学研汇
-" target="_blank">学研汇
-                        </a>  </p>
-                    </div>
-                    
-                </div>
-            </footer>
-
-    
-        <script src="js/vendor/jquery-1.11.0.min.js"></script>
-        <script src="js/vendor/jquery.gmap3.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-    </body>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/flower.jpeg" alt="year" class="bg">
+            <img src="images/handInHand.jpeg" alt="year" class="year year1 animate-active" set-tran="translateX(21%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="0">
+            <img src="images/snow.jpeg" alt="year" class="year year2  animate-active" set-tran="translateX(-21%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="1">
+            <img src="images/loveHappy.jpeg" alt="year" class="year year3  animate-active" set-tran="translateX(21%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="2">
+            <p class="year year4 animate-active" set-tran="translateX(-21%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="0">思念是一种很玄的东西 如影随形</p>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/slideyear.jpg" alt="year" class="bg">
+            <article class="like animate-active"   set-during-time="1600"  set-tran="translateY(-100%)" set-func="ease" set-delay="0">
+                <span>就算多一秒</span>
+                <span>停留在我的怀里</span>
+                <span>失去世界</span>
+                <span>也不可惜</span>
+            </article>
+            <img src="images/student.jpg" alt="student" class="student animate-active"   set-tran="rotateZ(0deg)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="0">
+        </div>
+        <div class="swiper-slide">
+            <img src="images/bye.jpg" alt="bye" class="bg">
+            <article class="myword animate-active" set-tran="scale(1.2)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="0">
+                <span>我无力抗拒，</span>
+                <span>特别是夜里，</span>
+                <span>想你到无法呼吸</span>
+                <span>恨不能立即</span>
+                <span>朝你狂奔去</span>
+                <span>愿意为你</span>
+                <span>我愿意为你</span>
+            </article>
+        </div>
+        <div class="swiper-slide">
+            <img src="images/flower.jpeg" alt="year" class="bg">
+            <img src="images/1231544175096_.pic.jpg" alt="year" class="year year1 animate-active" style="height: 30%;" set-tran="translateX(21%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="0">
+            <img src="images/1241544175097_.pic.jpg" alt="year" class="year year2  animate-active"  style="height: 30%;" set-tran="translateX(-21%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="1">
+            <img src="images/1251544175098_.pic.jpg" alt="year" class="year year3  animate-active"  style="height: 30%;" set-tran="translateX(21%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="2">
+            <p class="year year4 animate-active" set-tran="translateX(-21%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="0">什么都愿意 什么都愿意 为你</p>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="upchange iconfont up"></div>
+    <div id="music_container">
+        <audio  id="playmusic"></audio>
+        <div class="little1 animate-ele"><span class="animate-elea"></span></div>
+        <div class="little2 animate-ele"><span class="animate-elea"></span></div>
+        <div class="little3 animate-ele"><span class="animate-elea"></span></div>
+        <div id="main" class="animate-ele">
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/music.js"></script>
+<script type="text/javascript" src="js/snow.js"></script>
+<script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+<script type="text/javascript" src="js/touch.js"></script>
+<script type="text/javascript" src="js/friend.js"></script>
+</body>
 </html>
