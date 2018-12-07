@@ -62,6 +62,7 @@ var music = {
                     "animation":"Bround 2s linear 0s infinite",
                 });
             });
+            console.log(playmusic);
             playmusic.play();
             var musicobj = document.getElementsByClassName("music-container")[0];
             musicobj.addEventListener("touchend",playOrpause,false);
